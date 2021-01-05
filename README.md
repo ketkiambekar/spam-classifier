@@ -6,7 +6,7 @@ In this program, we implement a spam classifier using a very common generative a
 None
 
 ### Instructions to execute: 
-1) Open the notebook in google colab (click on the 'Open with Google Colab' badge): 
+1) Open the notebook in google colab (click on the 'Open in Colab' badge): 
 2) Upload the accompanying csv files in the file section on the left
 3) Edit the messages in the first cell as per your choice
 4) Click Runtime >> Run All. 
