@@ -7,7 +7,7 @@ None
 
 ### Instructions to execute: 
 1) Open the notebook in google colab (click on the 'Open in Colab' badge): 
-2) Upload the accompanying csv files in the file section on the left
+2) Upload all the csv files in the file section on the left
 3) Edit the messages in the first cell as per your choice
 4) Click Runtime >> Run All. 
 5) Results will be displayed at the bottom of the notebook
