@@ -11,3 +11,7 @@ None
 3) Edit the messages in the first cell as per your choice
 4) Click Runtime >> Run All. 
 5) Results will be displayed at the bottom of the notebook
+
+Alteratively:
+1) Clone this repository
+2) Run the "spam_classifier_nb.py" with the command $python spam_classifier_nb.py
