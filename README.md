@@ -8,7 +8,8 @@ In this program, we implement a spam classifier using a very common generative a
 Buy our new drug to give you guaranteed results
 Urgent! Claim your prize of $2000 now
 
-We used [this](https://www.kaggle.com/uciml/sms-spam-collection-dataset) dataset for training the classifier. 
+- We used [this](https://www.kaggle.com/uciml/sms-spam-collection-dataset) dataset for training the classifier. 
+- Hosted on Google Cloud Platform
 
 ### API Screenshots:
 
