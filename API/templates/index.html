@@ -1,0 +1,23 @@
+{% extends "layout.html"%}
+{% block body %}
+<div class="contact-us">
+<center><h1>Spam Classifier for Text Messages</h1>
+<h4 >Built from scratch without using Sci-kit Learn.</h4></center>
+</div>
+<div class="contact-us">
+  <form action="/response" method=POST>
+    <textarea id="msg" name="msg" rows="3" cols="50" placeholder="Enter text message here.."></textarea><br/>
+    <input class="btn" type="submit" value="Submit">
+  </form>
+  </div>
+  <div class="contact-us">
+{% if origmsg %}
+<center>
+  <p>Original Message: {{origmsg}} </p> 
+  {% endif %}
+  {% if verdict %} 
+  <p><h2>Verdict: {{verdict}}</h2></p>
+  {% endif %}
+  </center>
+</div>
+{% endblock %} 

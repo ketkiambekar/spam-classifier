@@ -24,6 +24,7 @@ Messages.append("Let's go shopping tomorrow!")
 import collections
 import numpy as np
 import csv
+import joblib
 
 """The first step is to clean and normalize our data corpus. We remove punctuations and special characters. """
 
@@ -272,6 +273,9 @@ def load_spam_dataset(tsv_path):
 """Bind it all together in the Main function below. It is also where you can see result of whether your original messages are spam or not. """
 
 def main():
+    import os 
+    print(os.getcwd())
+    os.chdir('/Users/ketkiambekar/Documents/GitHub-ketkiambekar/spam-classifier')
     train_messages, train_labels = load_spam_dataset('spam_train.tsv')
     val_messages, val_labels = load_spam_dataset('spam_val.tsv')
     test_messages, test_labels = load_spam_dataset('spam_test.tsv')
@@ -289,6 +293,10 @@ def main():
     test_matrix = transform_text(test_messages, dictionary)
 
     naive_bayes_model = fit_naive_bayes_model(train_matrix, train_labels)
+
+    #Pickle the model
+    joblib.dump(naive_bayes_model,"model/spam_classifier.joblib")
+    joblib.dump(dictionary, "model/dictionary.joblib")
 
     naive_bayes_predictions_v = predict_from_naive_bayes_model(naive_bayes_model, val_matrix)
 
