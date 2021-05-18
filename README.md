@@ -4,7 +4,7 @@ In this program, we implement a spam classifier using a very common generative a
 
 ### Click here for [Live Demo](https://spamclassifier.ketkiambekar.com/):
 
-- We used [this](https://www.kaggle.com/uciml/sms-spam-collection-dataset) dataset for training the classifier. 
+- [This](https://www.kaggle.com/uciml/sms-spam-collection-dataset) dataset was used for training the classifier. 
 - Hosted on Google Cloud Platform
 
 #### Sample Spam Messages:
